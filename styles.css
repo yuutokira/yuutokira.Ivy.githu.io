@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.start-text {
+    color: #00aaff;
+}
+header {
+    background-color: #00aaff; /* スライムっぽい青色 */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+#logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.story-section {
+    display: flex;
+    align-items: flex-start; /* 上揃えに変更 */
+    margin-bottom: 20px;
+}
+
+.story-image {
+    width: 500px; /* 画像の幅を30%に設定 */
+    height: auto;
+    margin-right: 20px;
+}
+
+.story-text {
+    width: 70%; /* テキスト部分の幅を70%に設定 */
+}
+
+
+.gaiden-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gaiden-slider img {
+    width: 600px;
+    height: 100%;
+  
+    
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+.carousel .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+ 
+.carousel input {
+    display: none;
+}
+ 
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+ 
+.slide img {
+    width: 100%;
+}
+ 
+.text {
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+ 
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+}
+ 
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+ 
+.prev {
+    left: 0;
+}
+ 
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+ 
+.dots {
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+ 
+.dots button {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+ 
+.dots button.active, .dots button:hover {
+    background-color: #717171;
+}
+
+
+
+/* Apps Section */
+.app2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.app {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.megido, .manga {
+    width: 48%;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+footer {
+    background-color: #00aaff; /* スライムっぽい青色 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.megido {
+    width: 400px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+.sample_box{
+    width:500px; /*サイズがサンプルなので適時変更してください。*/
+    margin:0 auto; /*サンプルで中央に寄せたいので書かせていただいております。*/
+   }
+   .sample_box img:hover{
+     transform:scale(1.2,1.2);
+   }
+
+.manga {
+    width: 300px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    width: 48%;
+}
+
+.app.img {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.app.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery.iframe,
+.gallery.image {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.gallery.iframe iframe,
+.gallery.image img {
+    width: 450px;
+    height: auto;
+}
